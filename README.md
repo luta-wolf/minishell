@@ -61,6 +61,7 @@ minishell
     - еще [гайд](https://github.com/Ukio-G/minishell/blob/master/doc.md)
     - описание библиотеки [`readline`](https://russianblogs.com/article/7614321785/)
     - туториал по [termcap](https://docs.google.com/document/d/1OzX0XRMcIUvCoE5ZTidod0K6yN3Kfs0wH0k-jTz45Lk/edit)
+    - управление [терминалом](https://ejudge.ru/study/3sem/term.pdf)
 - Видео лекции от 
     - [weambros](https://www.youtube.com/watch?v=Um3pzuee-4Y&ab_channel=AlexanderShorshin-studentof21school)
     - [rdrizzle](https://www.youtube.com/watch?v=A7ccmRSn7JY&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&ab_channel=Edu_events_mow)
