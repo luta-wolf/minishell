@@ -1,13 +1,6 @@
 NAME	=	minishell
 
-NAME_B	=	checker
-
 SRCS	=	src/minishell.c
-
-# SRCS_B	=	src/cheker.c		src/parser_check.c \
-# 			src/parser_init.c 	src/parser_add.c 	src/cmd_push.c \
-# 			src/cmd_swap.c		src/cmd_rotate.c 	src/cmd_reverse.c \
-# 			src/sort_big.c		src/sort_med.c		src/sort_min.c
 
 OBJ		=	$(SRCS:%.c=%.o)
 
@@ -22,6 +15,9 @@ HEADER	=	minishell.h
 CC		=	gcc
 
 FLAGS	=	-Wall -Wextra -Werror
+
+# FLAG_SH	=	-L /Users/$(USER)/.brew/opt/readline/lib/ -lreadline
+READLINE=   -L$(HOME)/.brew/opt/readline/lib -I .brew/opt/readline/include
 
 RM		= rm -rf
 
@@ -43,7 +39,7 @@ libft:
 			@$(MAKE) -C libft/
 
 $(NAME):	$(OBJ)
-			$(CC) $(FLAGS) $(OBJ) $(LIB) -o $(NAME)
+			$(CC) $(FLAGS) $(READLINE) $(OBJ) $(LIB) -o $(NAME)
 			@echo "$(TURQUOISE)\n\t Complited $(NAME) \n$(END)"
 
 %.o:		%.c $(INCLUDE)$(HEADER)
