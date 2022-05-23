@@ -1,7 +1,7 @@
-minishell
----------
-Написать свою оболочку имитирующую работу bash. 
+# minishell
+## Цель данного проекта написать свою оболочку имитирующую работу bash. 
 ### Введение
+    
 Были времена, когда все разработчики сходились во мнении, что общение с компьютером с помощью переключателя 1/0 серьезно раздражало. Вполне логично, что им пришла в голову идея создания программного обеспечения для общения с компьютером с помощью интерактивных строк команд на языке, несколько близким к человеческому. Благодаря Minishell вы сможете путешествовать во времени и возвращаться к проблемам когда люди сталкивались с тем, что Окон не существовало.
 
 ### Основная часть
@@ -53,6 +53,9 @@ minishell
 [checklist](https://github.com/mharriso/school21-checklists/blob/master/ng_3_minishell.pdf)
 <img width="1014" alt="image" src="https://user-images.githubusercontent.com/58044383/169034673-13408430-65ac-4e05-a69e-eb4c023f6262.png">
 
+<details>
+<summary>Полезные материалы</summary>
+    
 Полезные материалы
 ------------------
 - Чтиво по minishell
@@ -70,3 +73,5 @@ minishell
 - [Кейсы](https://docs.google.com/spreadsheets/d/1RPxSWKzRELfAirkaLeqqzoEArkaq9Vy7tTEHEnamlgA/edit#gid=0) для слома minishell 
 - Как использовать цвета чтобы `readline` правильно [работал](https://github.com/tlucanti/minishell/blob/master/inc/color.h)
 - Прочтать man по `printf`, `malloc`, `free`, `write`, `access`, `open`, `read`, `close`, `fork`, `wait`, `waitpid`, `wait3`, `wait4`, `signal`, `sigaction`, `sigemptyset`, `sigaddset`, `kill`, `exit`, `getcwd`, `chdir`, `stat`, `lstat`, `fstat`, `unlink`, `execve`, `dup`, `dup2`, `pipe`, `opendir`, `readdir`, `closedir`, `strerror`, `perror`, `isatty`, `ttyname`, `ttyslot`, `ioctl`, `getenv`, `tcsetattr`, `tcgetattr`, `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`
+    
+</details>
