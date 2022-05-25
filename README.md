@@ -69,6 +69,7 @@
     - [weambros](https://www.youtube.com/watch?v=Um3pzuee-4Y&ab_channel=AlexanderShorshin-studentof21school)
     - [rdrizzle](https://www.youtube.com/watch?v=A7ccmRSn7JY&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&ab_channel=Edu_events_mow)
     - [imicah](https://www.youtube.com/watch?v=7B6o2YyvIKw&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&index=4&ab_channel=Edu_events_mow)
+    - [лекция про пайсей](https://www.youtube.com/watch?v=i49JO5YA08s&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%90%D1%80%D1%85%D0%B8%D0%BF%D0%BE%D0%B2)
     - еще [лекция](https://www.youtube.com/watch?v=i49JO5YA08s&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&index=5&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%90%D1%80%D1%85%D0%B8%D0%BF%D0%BE%D0%B2)
 - [Кейсы](https://docs.google.com/spreadsheets/d/1RPxSWKzRELfAirkaLeqqzoEArkaq9Vy7tTEHEnamlgA/edit#gid=0) для слома minishell 
 - Как использовать цвета чтобы `readline` правильно [работал](https://github.com/tlucanti/minishell/blob/master/inc/color.h)
