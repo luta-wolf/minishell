@@ -53,8 +53,8 @@
 [checklist](https://github.com/mharriso/school21-checklists/blob/master/ng_3_minishell.pdf)
 <img width="1014" alt="image" src="https://user-images.githubusercontent.com/58044383/169034673-13408430-65ac-4e05-a69e-eb4c023f6262.png">
 
-<details>
-<summary>Полезные материалы</summary>
+<!-- <details>
+<summary>Полезные материалы</summary> -->
     
 Полезные материалы
 ------------------
@@ -75,4 +75,4 @@
 - Как использовать цвета чтобы `readline` правильно [работал](https://github.com/tlucanti/minishell/blob/master/inc/color.h)
 - Прочтать man по `printf`, `malloc`, `free`, `write`, `access`, `open`, `read`, `close`, `fork`, `wait`, `waitpid`, `wait3`, `wait4`, `signal`, `sigaction`, `sigemptyset`, `sigaddset`, `kill`, `exit`, `getcwd`, `chdir`, `stat`, `lstat`, `fstat`, `unlink`, `execve`, `dup`, `dup2`, `pipe`, `opendir`, `readdir`, `closedir`, `strerror`, `perror`, `isatty`, `ttyname`, `ttyslot`, `ioctl`, `getenv`, `tcsetattr`, `tcgetattr`, `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`
     
-</details>
+<!-- </details> -->
