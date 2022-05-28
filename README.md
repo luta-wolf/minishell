@@ -1,7 +1,8 @@
 # minishell
-## Цель данного проекта написать свою оболочку имитирующую работу bash. 
+## Цель данного проекта написать свою оболочку имитирующую работу bash.
+[subject](https://github.com/luta-wolf/minishell/blob/master/doc/en.subject.pdf)
 ### Введение
-    
+
 Были времена, когда все разработчики сходились во мнении, что общение с компьютером с помощью переключателя 1/0 серьезно раздражало. Вполне логично, что им пришла в голову идея создания программного обеспечения для общения с компьютером с помощью интерактивных строк команд на языке, несколько близким к человеческому. Благодаря Minishell вы сможете путешествовать во времени и возвращаться к проблемам когда люди сталкивались с тем, что Окон не существовало.
 
 ### Основная часть
@@ -50,12 +51,12 @@
 
 Чеклист
 -------
-[checklist](https://github.com/mharriso/school21-checklists/blob/master/ng_3_minishell.pdf)
+[checklist](https://github.com/luta-wolf/minishell/blob/master/doc/checklist_minishell.pdf)
 <img width="1014" alt="image" src="https://user-images.githubusercontent.com/58044383/169034673-13408430-65ac-4e05-a69e-eb4c023f6262.png">
 
 <!-- <details>
 <summary>Полезные материалы</summary> -->
-    
+
 Полезные материалы
 ------------------
 - Чтиво по minishell
@@ -65,14 +66,14 @@
     - описание библиотеки [`readline`](https://russianblogs.com/article/7614321785/)
     - туториал по [termcap](https://docs.google.com/document/d/1OzX0XRMcIUvCoE5ZTidod0K6yN3Kfs0wH0k-jTz45Lk/edit)
     - управление [терминалом](https://ejudge.ru/study/3sem/term.pdf)
-- Видео лекции от 
+- Видео лекции от
     - [weambros](https://www.youtube.com/watch?v=Um3pzuee-4Y&ab_channel=AlexanderShorshin-studentof21school)
     - [rdrizzle](https://www.youtube.com/watch?v=A7ccmRSn7JY&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&ab_channel=Edu_events_mow)
     - [imicah](https://www.youtube.com/watch?v=7B6o2YyvIKw&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&index=4&ab_channel=Edu_events_mow)
     - [лекция про пайсей](https://www.youtube.com/watch?v=i49JO5YA08s&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%90%D1%80%D1%85%D0%B8%D0%BF%D0%BE%D0%B2)
     - еще [лекция](https://www.youtube.com/watch?v=i49JO5YA08s&list=PLUJCSGGiox1R4wwUO0hS899uT02XDQIc_&index=5&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%90%D1%80%D1%85%D0%B8%D0%BF%D0%BE%D0%B2)
-- [Кейсы](https://docs.google.com/spreadsheets/d/1RPxSWKzRELfAirkaLeqqzoEArkaq9Vy7tTEHEnamlgA/edit#gid=0) для слома minishell 
+- [Кейсы](https://docs.google.com/spreadsheets/d/1RPxSWKzRELfAirkaLeqqzoEArkaq9Vy7tTEHEnamlgA/edit#gid=0) для слома minishell
 - Как использовать цвета чтобы `readline` правильно [работал](https://github.com/tlucanti/minishell/blob/master/inc/color.h)
 - Прочтать man по `printf`, `malloc`, `free`, `write`, `access`, `open`, `read`, `close`, `fork`, `wait`, `waitpid`, `wait3`, `wait4`, `signal`, `sigaction`, `sigemptyset`, `sigaddset`, `kill`, `exit`, `getcwd`, `chdir`, `stat`, `lstat`, `fstat`, `unlink`, `execve`, `dup`, `dup2`, `pipe`, `opendir`, `readdir`, `closedir`, `strerror`, `perror`, `isatty`, `ttyname`, `ttyslot`, `ioctl`, `getenv`, `tcsetattr`, `tcgetattr`, `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`
-    
+
 <!-- </details> -->
