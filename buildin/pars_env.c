@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   pars_env.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/16 18:09:02 by einterdi          #+#    #+#             */
-/*   Updated: 2022/05/27 13:45:10 by einterdi         ###   ########.fr       */
+/*   Created: 2022/05/27 13:31:44 by einterdi          #+#    #+#             */
+/*   Updated: 2022/05/27 14:27:46 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int main(int argc, char **argv, char **env)
+void	pars_env2(char *str)
 {
-	(void)argc;
-	// (void)argv;
-	// (void)env;
+	printf(" %s\n", str);
+}
 
-	printf("Hello");
-	pars_env2(argv[0]);
-	pars_env(env);
-	return (0);
+void	pars_env(char **env)
+{
+	int		i;
+	// char	*tmp;
+
+	i = -1;
+	while(env[++i])
+	{
+	// 	tmp = ft_split(env[i], "=");
+
+	// 	free (tmp);
+	}
 }

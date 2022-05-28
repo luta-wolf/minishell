@@ -1,6 +1,6 @@
 NAME	=	minishell
 
-SRCS	=	src/minishell.c
+SRCS	=	src/minishell.c	buildin/pars_env.c
 
 OBJ		=	$(SRCS:%.c=%.o)
 
@@ -10,7 +10,7 @@ LIB		=	libft/libft.a
 
 INCLUDE	=	include/
 
-HEADER	=	minishell.h
+HEADER	=	buildin.h
 
 CC		=	gcc
 
@@ -61,5 +61,3 @@ fclean:		clean
 
 re:			fclean all
 			@echo "$(BLUE)\tRemake done\n$(END)"
-
-
