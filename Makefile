@@ -1,6 +1,6 @@
 NAME	=	minishell
 
-SRCS	=	src/minishell.c	buildin/pars_env.c
+SRCS	=	src/main.c	src/buildin/pars_env.c
 
 OBJ		=	$(SRCS:%.c=%.o)
 
@@ -61,3 +61,4 @@ fclean:		clean
 
 re:			fclean all
 			@echo "$(BLUE)\tRemake done\n$(END)"
+make fclean all
