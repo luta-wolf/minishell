@@ -10,7 +10,7 @@ LIB		=	libft/libft.a
 
 INCLUDE	=	include/
 
-HEADER	=	buildin.h
+HEADER	=	minishell.h
 
 CC		=	gcc
 
@@ -61,4 +61,5 @@ fclean:		clean
 
 re:			fclean all
 			@echo "$(BLUE)\tRemake done\n$(END)"
-make fclean all
+
+
