@@ -17,7 +17,8 @@ CC		=	gcc
 FLAGS	=	-Wall -Wextra -Werror
 
 # FLAG_SH	=	-L /Users/$(USER)/.brew/opt/readline/lib/ -lreadline
-READLINE=   -L$(HOME)/.brew/opt/readline/lib -I .brew/opt/readline/include
+# READLINE=   -L$(HOME)/.brew/opt/readline/lib -I .brew/opt/readline/include
+READLINE=	-l readline
 
 RM		= rm -rf
 
