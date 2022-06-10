@@ -1,66 +1,80 @@
-NAME	=	minishell
-
-SRCS	=	src/main.c	src/buildin/pars_env.c
-
-OBJ		=	$(SRCS:%.c=%.o)
-
-OBJ_B	=	$(SRCS_B:%.c=%.o)
-
-LIB		=	libft/libft.a
-
-INCLUDE	=	include/
-
-HEADER	=	minishell.h
-
-CC		=	gcc
-
-FLAGS	=	-Wall -Wextra -Werror
-
-# FLAG_SH	=	-L /Users/$(USER)/.brew/opt/readline/lib/ -lreadline
-# READLINE=   -L$(HOME)/.brew/opt/readline/lib -I .brew/opt/readline/include
-READLINE=	-l readline
-
-RM		= rm -rf
-
-#---------------------------------------------------------------------------------
-RED		=	\033[1;31m
-BLUE	=	\033[1;34m
-YELLOW	=	\033[1;33m
-WHITE	=	\033[1;32m
-PUPURE	=	\033[1;35m
-GRY		=	\033[1;30m
-TURQUOISE =	\033[36;1m
-END		=	\033[0m
-#---------------------------------------------------------------------------------
-.PHONY:		all	clean	fclean	re	bonus	libft
-
-all:		libft $(NAME)
-
-libft:
-			@$(MAKE) -C libft/
-
-$(NAME):	$(OBJ)
-			$(CC) $(FLAGS) $(READLINE) $(OBJ) $(LIB) -o $(NAME)
-			@echo "$(TURQUOISE)\n\t Complited $(NAME) \n$(END)"
-
-%.o:		%.c $(INCLUDE)$(HEADER)
-			$(CC) $(FLAGS)  -c $< -o $@ -I $(INCLUDE)
-
-bonus:		libft $(OBJ_B)
-			$(CC) $(FLAGS) $(OBJ_B) $(LIB) -o $(NAME_B)
-			@echo "$(TURQUOISE)\n\tComplited $(NAME_B) \n$(END)"
-
-clean:
-			@$(RM) $(OBJ) $(OBJ_B)
-			@$(MAKE) -C libft/ clean
-			@echo "$(BLUE)\n\tCleaning succeed\n$(END)"
-
-fclean:		clean
-			@$(MAKE) -C libft/ fclean
-			@$(RM) $(NAME) $(NAME_B)
-			@echo "$(BLUE)\tAll files were deleted\n$(END)"
-
-re:			fclean all
-			@echo "$(BLUE)\tRemake done\n$(END)"
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jleslee <jleslee@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/04/05 15:14:49 by mbonnet           #+#    #+#              #
+#    Updated: 2022/06/07 20:13:28 by jleslee          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 
+NAME			=	minishell 
+
+SRCS			=	main.c\
+					hendler/hendler.c\
+					building/unset.c\
+					building/cd.c\
+					building/exit.c\
+					building/echo_pwd_env.c\
+					building/export/export.c\
+					building/export/export_processing.c\
+					building/export/add_env_export.c\
+					building/export/print_export.c\
+					building/check_building.c\
+					free/free.c\
+					init_struct_env.c\
+					parsing/init_parsing.c\
+					parsing/check_str_cmd.c\
+					parsing/utile.c\
+					parsing/init_tab_cmd/init_tab_cmd.c\
+					parsing/init_struct/init_struct.c\
+					parsing/init_struct/utile.c\
+					parsing/init_struct/control_red.c\
+					parsing/init_struct/control_cmd.c\
+					parsing/init_struct/control_arg.c\
+					ex_cmd/launch_ex.c\
+					ex_cmd/control_var_env.c\
+					ex_cmd/control_var_env_utile.c\
+					ex_cmd/control_pipe.c\
+					ex_cmd/control_redirect.c\
+					ex_cmd/control_heredoc.c\
+					ex_cmd/control_heredoc_2.c\
+					ex_cmd/control_ex.c\
+
+
+OBJS			=	${addprefix srcs/,${SRCS:.c=.o}}
+
+HEAD			=	-I includes -I libs/includes
+
+CC				=	clang
+
+CFLAGS			=	-Wall -Werror -Wextra 
+
+LIBS_DIR		=	libs
+
+LDFLAGS			=	-L ${LIBS_DIR} -lft 
+
+.c.o			:
+					${CC} ${CFLAGS} ${HEAD}  -c $< -o ${<:.c=.o} 
+
+$(NAME)			:	${OBJS} ${LIBS_DIR}
+					make -C ${LIBS_DIR}
+					${CC} ${CFLAGS} -lreadline ${OBJS} ${LDFLAGS} -o ${NAME} -lncurses
+
+
+all				:	${NAME}
+
+clean			:
+					make clean -C ${LIBS_DIR}
+					rm -rf ${OBJS}
+
+fclean			:	clean
+					make fclean -C ${LIBS_DIR}
+					rm -rf ${NAME}
+
+re				:	fclean all
+
+.PHONY			:	all clean fclean re
